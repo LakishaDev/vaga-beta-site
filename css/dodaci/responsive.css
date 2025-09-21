@@ -1,0 +1,101 @@
+@media (max-width: 858px) {
+    .dugmeProvera {
+        display: block;
+        margin-right: 20px;
+    }
+    /* header .meni {
+        position: fixed;
+    } */
+    header .meni ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 65px;
+        left: -100%;
+        text-align: center;
+        transition: all 500ms ease-in-out;
+        margin: 0;
+        z-index: 100;
+    }
+    header .meni ul li {
+        display: block;
+        margin: 80px 0;
+        line-height: 30px;
+    }
+    header .meni ul li a {
+        font-size: 20pt;
+    }
+    #provera:checked ~ ul {
+        left: 0;
+    }
+    /* #pocKont .slikaKont::before,
+    #pocKont .slikaKont::after {
+        height: calc(100% - 57vh);
+    } */
+    #pocKont .slikaKont .tackice {
+        position: absolute;
+        z-index: 3;
+        top: var(--tackice-poz);
+        left: 46%;
+        transform: translate(-46%, - var(--tackice-poz));
+        text-align: center;
+    }   
+    /* :root {
+        --duzinaSlikeSs: 44vh;
+    }  */
+    #onamak .pasus p,
+    #uslugek .pasus p {
+        text-align: center;
+    }
+    #onamak .pasus #dokumenti ul li {
+        display: block;
+    }
+    #onamak .pasus #dokumenti img {
+        width: 95%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 730px) {
+    #pocKont .slikaKont .slajdovi .text {
+        font-size: 38pt;
+    }
+    #pocKont .slikaKont .slikaBck .text,
+    #pocKont .slikaKont .slikaBck2 .text {
+        font-size: 38pt;
+    }
+    #kontakt #mapaa {
+        text-align: center;
+    }
+    #kontakt #mapaa iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 539px) {
+    #pocKont .slikaKont .slajdovi .text {
+        font-size: 30pt;
+    }
+    #pocKont .slikaKont .slikaBck .text,
+    #pocKont .slikaKont .slikaBck2 .text {
+        font-size: 30pt;
+    }
+    #kontakt #precice li {
+        padding: 0;
+        white-space: pre-line;
+    }
+    #kontakt #precice {
+        text-align: center;
+        float: none;
+        padding: 0;
+    }
+    #kontakt #mapaa {
+        text-align: center;
+        padding: 5px;
+    }
+    #kontakt {
+        text-align: center;
+    }
+}

@@ -1,0 +1,38 @@
+@keyframes lol {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes anim2 {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes hoverPuls {
+    0% {transform: scale(1.0);}
+    50% {transform: scale(1.2);}
+    100% {transform: scale(1.0);}
+}
+
+@keyframes loader {
+    0% {
+      transform: scaleY(0.1);
+      background: none;
+    }
+    50% {
+      transform: scaleY(1);
+      background: #02FF8C;
+    }
+    100% {
+      transform: scaleY(0.1);
+      background: transparent;
+    }
+}

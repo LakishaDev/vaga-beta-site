@@ -1,0 +1,14 @@
+#uslugek .pasus {
+    background: linear-gradient(-90deg, #BFC8D4, #9FADBF, #8091A9);
+    padding: 10px 10px 0 10px;
+}
+
+#uslugek .pasus h2 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#uslugek .pasus p {
+    padding: 0 30px 20px 30px;
+    font-size: 12pt;
+}

@@ -1,0 +1,16 @@
+/* FONTOVI */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap");
+
+/* ANIMACIJE */
+@import url("dodaci/anim.css");
+@import url("dodaci/loader.css");
+
+/* STRANICE */
+@import url("stranice/pocetna.css");
+@import url("stranice/onama.css");
+@import url("stranice/usluge.css");
+@import url("stranice/kontakt.css");
+@import url("stranice/proizvodi.css");
+
+
+@import url("dodaci/responsive.css");

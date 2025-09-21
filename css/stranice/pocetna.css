@@ -1,0 +1,217 @@
+#pocKont {
+    display: block;
+}
+
+#pocKont .slikaKont::before,
+#pocKont .slikaKont::after {
+    width: 100%;
+    height: var(--duzinaSlikeSs);
+    background: var(--koverPocetnaSlikaBoja);
+    opacity: 0.55;
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: 65px;
+    left: 0;
+}
+
+#pocKont .slikaKont .slajdovi {
+    position: relative;
+    display: none;
+    white-space: nowrap;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease;
+}
+
+#pocKont .slikaKont .slajdovi .text {
+    position: absolute;
+    color: #fff;
+    font-size: 45pt;
+    font-variant: small-caps;
+    font-weight: 900;
+    margin: auto;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    text-shadow: 0 1px 20px rgba(255, 255, 255, 0.664);
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease;
+}
+
+#pocKont .slikaKont .mrtveSlike {
+    position: absolute;
+    width: 100%;
+    height: var(--duzinaSlikeSs);
+    background-color: var(--koverPocetnaSlikaBoja);
+    z-index: 0;
+    display: none;
+}
+
+#pocKont .slikaKont .mrtveSlike img {
+    position: relative;
+    width: 100%;
+    height: var(--duzinaSlikeSs);
+    z-index: 0;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: cover;
+    backface-visibility: hidden;
+    object-position: center;
+}
+
+#pocKont .slikaKont .mrtveSlike .text {
+    position: absolute;
+    color: #fff;
+    font-size: 45pt;
+    font-variant: small-caps;
+    font-weight: 900;
+    margin: auto;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease;
+}
+
+#pocKont .slikaKont .slajdovi img {
+    position: relative;
+    width: 100%;
+    height: var(--duzinaSlikeSs);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: cover;
+    z-index: 1;
+    backface-visibility: hidden;
+    object-position: center;
+}
+
+#pocKont .slikaKont .tackice {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#pocKont .slikaKont .tackice ul li {
+    display: inline-block;
+    z-index: 3;
+}
+
+#pocKont .slikaKont .tackice ul li .tacka {
+    z-index: 3;
+    width: 15px;
+    height: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    /* cursor: pointer; */
+    transition: background-color 0.5s ease;
+}
+
+#pocKont .slikaKont .tackice ul li .tacka.aktivna {
+    background-color: rgb(90, 90, 90);
+}
+
+#pocKont .slikaKont .slajdovi.anim {
+    animation: lol 2.5s ease-in-out;
+    background-color: var(--koverPocetnaSlikaBoja);
+}
+
+#pocKont .slikaKont .anim2 {
+    animation: anim2 2.5s ease-in-out;
+    background-color: var(--koverPocetnaSlikaBoja);
+}
+
+.dugmeProvera {
+    font-size: 30px;
+    color: #0276FF;
+    float: right;
+    line-height: 65px;
+    margin-left: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#provera {
+    display: none;
+}
+
+#pocKont .nestoVise {
+    background: linear-gradient(to left, var(--boja2), var(--boja1), var(--koverPocetnaSlikaBoja));
+    text-align: left;
+    /* margin: 50px 50px 50px 50px; */
+    /* border-radius: 15px; */
+    padding-top: 25px;
+}
+
+#pocKont .nestoVise .kontNudimo {
+    text-align: left;
+    padding: 0 25px 25px 25px;
+}
+
+#pocKont .nestoVise .kontNudimo .text {
+    font-size: 23pt;
+    color: var(--boja3);
+    font-weight: 600;
+}
+
+#pocKont .nestoVise .kontNudimo ul {
+    list-style: none;
+    color: var(--boja3);
+    /* padding-left: 15px; */
+}
+
+#pocKont .nestoVise .kontNudimo ul li {
+    display: block;
+    padding-top: 10px;
+    font-size: 15pt;
+}
+
+.ucitavanje-slike {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ucitavanje-slike::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    animation: pulse 2.5s infinite;
+    background-color: var(--boja3);
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.ucitavanje-slike.loaded::before {
+    animation: none;
+    content: none;
+}
+
+.ucitavanje-slike > img {
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+}
+
+.ucitavanje-slike.loaded > img {
+    opacity: 1;
+}

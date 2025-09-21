@@ -1,0 +1,47 @@
+#kontakt {
+    background: linear-gradient(90deg, #6a7d97,#8e9eb4, #BFC8D4);
+    padding: 10px 10px 0 10px;
+}
+
+#kontakt #naslov-span {
+    text-align: center;
+}
+
+#kontakt #precice {
+    float: left;
+    padding: 20px;
+    white-space: nowrap;
+}
+
+#kontakt #precice li {
+    display: block;
+    padding: 10px;
+    color: var(--boja3);
+    list-style: none;
+    margin: 2%;
+}
+
+#kontakt #precice li a {
+    text-align: center;
+    text-decoration: none;
+    color: var(--boja3);
+}
+
+#kontakt #precice li i {
+    font-size: 23pt;
+    text-align: center;
+    width: 45pt;
+    background-color: #233d61;
+    padding: 10pt;
+    border-radius: 50%;
+}
+
+#kontakt #mapaa {
+    padding: 25px;
+    text-align: right;
+}
+
+#kontakt #mapaa iframe {
+    width: 400px;
+    height: 300px;
+}
